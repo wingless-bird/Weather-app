@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <link rel="icon" type="png" href="img/thunderstorm.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Title -->
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <!-- main section -->
+    <div id="screen">
+    <!-- nav section -->
+    <div class="app-name">
+    <h1>Weather Update</h1>
+    </div>     
+      <div class="date"></div>
+      <!-- city name -->
+<div class="city-name">
+<a href="search.html"><i class="fa-solid fa-magnifying-glass">
+&nbsp;&nbsp;City not detected &#45; Enter manually</i></a>
+</div>
+        <!-- weather icon -->
+        <div class="weather-icon-css">
+          <img class="weather-icon" src="img/haze.png" />
+        </div>
+        <!-- weather details -->
+        <div class="weather-description">
+          <div class="show-metric" id="metric">0°</div>
+          <div class="weather-details">
+            <div class="weather-main" id="weather-main">⛈️</div>
+            <div class="h-f">
+              <div class="show-humidity">H: <span id="humidity">0</span></div>
+              ||
+              <div class="show-humidity">
+                F: <span id="feels-like">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Today-forecast -->
+        <div class="forcasts-box">
+          <div class="today-forecast">
+            <h4>TODAY</h4>
+            <div class="weather-icon-today">
+              🌈
+            </div>
+            <div class="temp-today">
+              <span id="temp-min-today">0°</span><span>/ </span
+              ><span id="temp-max-today">0°</span>
+            </div>
+            <div class="weather-main-today" id="weather-main"></div>
+          </div>
+
+          <!-- 5day Forecast -->
+          <div class="future-forecast">
+            <h5>Other Info...</h5>
+            <div id="future-forecast-box"></div>
+          </div>
+        </div>
+      </div>
+      <!-- script -->
+    <script src="js/main.js"></script>
+  </body>
+  </html>
