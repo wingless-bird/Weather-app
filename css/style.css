@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:url("../img/bg.jpg") center center/cover no-repeat fixed;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.app{
+    width:100%;
+    max-width:900px;
+    background:rgba(0,0,0,.28);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.search-box{
+    display:flex;
+    gap:12px;
+    max-width:600px;
+    margin:0 auto 35px;
+}
+
+.searchinput{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    font-size:17px;
+    outline:none;
+}
+
+.search-btn{
+    padding:15px 28px;
+    border:none;
+    border-radius:15px;
+    background:#2f80ed;
+    color:#fff;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-btn:hover{
+    background:#1565c0;
+}
+
+.return{
+    margin-top:10px;
+}
+
+.city-name{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.weather-icon,
+.weather-img{
+    width:150px;
+    display:block;
+    margin:15px auto;
+}
+
+.weather-temp{
+    font-size:72px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.condition{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.weather-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.box{
+    background:rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:22px 15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+
+.box span{
+    margin-top:10px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.forecast-box{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.forecast-item{
+    background:rgba(255,255,255,.15);
+    border-radius:16px;
+    padding:18px;
+}
+
+.forecast-item img{
+    width:45px;
+    margin:10px auto;
+    display:block;
+}
+
+.forecast-item h4{
+    margin-bottom:8px;
+}
+
+.forecast-item p{
+    margin-top:8px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .app{
+        padding:20px;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-btn{
+        width:100%;
+    }
+
+    .city-name{
+        font-size:28px;
+    }
+
+    .weather-temp{
+        font-size:56px;
+    }
+
+    .weather-icon,
+    .weather-img{
+        width:120px;
+    }
+
+    .weather-grid{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .box{
+        padding:18px 10px;
+    }
+
+    .box span{
+        font-size:20px;
+    }
+
+    .forecast-box{
+        grid-template-columns:1fr 1fr;
+    }
+}
